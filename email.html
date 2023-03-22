@@ -9,11 +9,11 @@
     <title>Email Template</title>
 </head>
 <body>
-    
-  <div class="container-fluid border border-dark mt-5 p-3">
+    <!-- Welcome column -->
+  <div class="container-fluid border border-dark mt-5 p-3" id ="welcome-header">
 <p>Welcome Aaron!</p>
     <div class="row">
-      <nav class="navbar bg-light">
+      <nav class="navbar" id ="search-navbar">
         <div class="container-fluid">
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -21,7 +21,9 @@
           </form>
         </div>
       </nav>
-      <div class="col-sm-3 bg-dark d-grid gap-3">
+      <!-- Left most column with clickable tabs -->
+      <!-- Make this collapsable with div -->
+      <div class="col-sm-3 d-none d-sm-grid gap-3" id = "left-column">
         <div class="Heading"></div>
         <button type="button" class="btn btn-primary">Compose</button>
         <ul class="nav flex-column">
@@ -62,8 +64,8 @@
           </button>
         </ul>
          </div>
-
-      <div class="col-sm-3 bg-primary">
+<!-- Middle Column that includes received emails with text and current dates -->
+      <div class="col-sm-3" id="middle-column">
         <div class="card mt-5">
           <div class="card-body">
           9 March 2023<br>
@@ -84,9 +86,10 @@
             Hey Aaron!...
           </div>
         </div>
-        
+        <!-- This is the right most column with a text area and composable email  -->
+        <!-- Ability to write and choose files  -->
           </div>
-      <div class="col-sm-6 bg-success">
+      <div class="col-sm-6" id ="right-column">
         <div class="card w-100 h-85 mt-5">
           <div class="mb-3 ms-2 mt-3">
             <label for="exampleFormControlInput1" class="form-label">To...</label>
